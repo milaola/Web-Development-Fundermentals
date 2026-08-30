@@ -1,0 +1,26 @@
+#grid-container{
+display: grid;
+grid-template-columns: 200px auto;
+grid-template-rows: 100px, auto, auto; 
+grid-template-areas: "navbar navbar"
+                    "sidebar content" 
+                    "sidebar footer"
+                    ;
+gap: 10px;
+}
+#navbar{
+    background-colour: rgb(45, 58, 31);
+    grid-area: navbar;
+}
+ul li{
+    display: inline;
+    padding: 4px;
+}
+#content{
+    background-colour: rgb(184, 166, 120);
+    grid-area: sidebar;
+}
+#footer{
+    background-colour: rgb(205, 210, 201);
+    grid-area:footer;
+}
