@@ -14,22 +14,24 @@
             <legend>Personal Information</legend>
             <label for="fullName">Full Name:</label>
             <input type="text" id="fullName" name="fullName" placeholder="e.g John" required>
-            <br/>
+            <br />
             <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" placeholder="e.g. john@example.com" required>
-            <br/>
+            <br />
             <label for="username">Username:</label>
-            <input type="text" id="username" placeholder="Jon123" title="Username must contain only letters and numbers" required/>
-            <br/>
+            <input type="text" id="username" placeholder="Jon123" title="Username must contain only letters and numbers"
+                required />
+            <br />
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Atleast 8 characters" minlength="8" required>
-            <br/>
+            <input type="password" id="password" name="password" placeholder="Atleast 8 characters" minlength="8"
+                required>
+            <br />
             <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob"  required>
-            <br/>
+            <input type="date" id="dob" name="dob" required>
+            <br />
             <label for="profilePicture">Profile Picture:</label>
             <input type="file" id="profilePicture" name="profilePicture" accept=".jpg,.png" required>
-            <br/>
+            <br />
 
 
         </fieldset>
@@ -37,20 +39,38 @@
         <fieldset>
             <legend>Channel Settings</legend>
             <p>Content Genres:</p>
-            <input type="checkbox" id="tech" name="genre" value="Tech" required >
+            <input type="checkbox" id="tech" name="genre" value="Tech" required>
             <label for="tech">Tech</label>
             <input type="checkbox" id="lifestyle" name="genres" value="Lifestyle">
             <label for="lifestyle">Lifestyle</label>
             <input type="checkbox" id="gaming" name="genres" value="Gaming">
             <label for="gaming">Gaming</label>
-            <br/>
+            <br />
             <label for="uploadVolume">Expected Weekly Upload Volume:</label>
             <input type="range" id="uploadVolume" name="uloadVolume" min="0" max="10" value="5">
             <span>0-10 videos</span>
-            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Helpful Tips</legend>
+            <p>Listen to our helpful tips:</p>
+            <audio controls>
+                <source src="helpful-tips.mp4" type="audio/mpeg" autoplay muted >
+                <source src="helpful-tips.ogg" type="audio/ogg" autoplay muted>
+                Your browser does not support the audio type.
+            </audio>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
 
-        
-     
+
+    </form>
+
+
+
+
+
+
+
 
 </body>
 
