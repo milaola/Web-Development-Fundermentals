@@ -54,7 +54,7 @@
             <legend>Helpful Tips</legend>
             <p>Listen to our helpful tips:</p>
             <audio controls>
-                <source src="helpful-tips.mp4" type="audio/mpeg" autoplay muted >
+                <source src="helpful-tips.mp4" type="audio/mpeg" autoplay muted>
                 <source src="helpful-tips.ogg" type="audio/ogg" autoplay muted>
                 Your browser does not support the audio type.
             </audio>
@@ -64,6 +64,20 @@
 
 
     </form>
+
+    <script>
+        const dob = document.getElementById("dob");
+        const today = new Date();
+        const maximumDate = new Date(
+            today.getFullYear() - 18,
+            today.getMonth(),
+            today.getDate()
+        )
+        dob.max = maximumDate.toISOString().split("T")[0];
+    </script>
+
+
+
 
 
 
