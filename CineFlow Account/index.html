@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Creator Registration</title>
+</head>
+
+<body>
+    <h1> Cotnent Creator Registration Form</h1>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="e.g John" required>
+            <br/>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="e.g. john@example.com" required>
+            <br/>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Jon123" title="Username must contain only letters and numbers" required/>
+            <br/>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Atleast 8 characters" minlength="8" required>
+            <br/>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"  required>
+            <br/>
+            <label for="profilePicture">Profile Picture:</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept=".jpg,.png" required>
+            <br/>
+
+
+        </fieldset>
+        
+     
+
+</body>
+
+</html>
